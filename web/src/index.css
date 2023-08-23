@@ -1,0 +1,198 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin: 50px auto;
+  color: #333;
+  max-width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+} */
+
+/* Login and Signup Heading Styles */
+.heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Underline Effect */
+.heading::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #2186d4;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+.inputf input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid #ddd;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.inputf input:focus {
+  border-bottom-color: #2186d4;
+}
+
+.button button {
+  width: 100%;
+  padding: 15px;
+  background-color: #2186d4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+  background-color: #17649e;
+}
+
+/* .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  cursor: pointer;
+  background-color: #2186d4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+} */
+
+/* Tab Styles */
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  cursor: pointer;
+  background-color: #2186d4;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #17649e;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tab:active {
+  transform: scale(0.95);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Table Styles */
+.my {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 1000px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #2186d4;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #2186d4;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+
+/* Edit and Delete Button Styles */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn.edit {
+  background-color: #2186d4;
+  color: white;
+  margin-right: 10px;
+}
+
+.btn.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
